@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=0.90, user-scalable=yes">
+    <title>داستان ما | سفر خاطرات</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700;14..32,800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<!-- صفحه اسپلش سورپرایز -->
+<div class="splash-screen" id="splashScreen">
+    <div class="splash-content">
+        <div class="splash-icon">✨</div>
+        <h2>یک لحظه خاص</h2>
+        <p>برای تو...</p>
+        <button class="splash-btn" id="splashBtn">شروع</button>
+    </div>
+</div>
+
+<!-- صفحه اصلی -->
+<div class="main-page" id="mainPage">
+
+    <!-- هدر -->
+<section class="hero-section">
+    <div class="hero-content">
+        <span class="badge">🍃 یادداشت‌های شیرین</span>
+        <h1>داستان ما</h1>
+        <p>چند قاب ساده از روزهایی که با هم ساختیم.<br>فقط برای تو.</p>
+        
+        <div class="hero-buttons">
+            <button class="timeline-trigger" id="scrollToTimelineBtn">
+                <span>📖</span> ورق بزن
+            </button>
+            <button class="music-btn" id="musicToggleBtn">
+                <span class="music-icon">🎵</span>
+                <span class="music-text">پخش موزیک</span>
+            </button>
+        </div>
+    </div>
+</section>
+    <!-- تایم‌لاین -->
+    <section class="timeline-horizontal" id="timelineSection">
+        <div class="container">
+            <div class="section-header">
+                <h2>📖 مسیر خاطرات</h2>
+                <p>اسکرول کن یا با موس بکش | برای دیدن جزئیات روی هر کارت کلیک کن</p>
+            </div>
+            <div class="timeline-scroll" id="timelineScroll">
+                <div class="timeline-track" id="timelineTrack"></div>
+            </div>
+            <div class="progress-indicator" id="progressIndicator"></div>
+        </div>
+    </section>
+
+    <!-- فوتر -->
+    <div class="footer-minimal">
+        ساخته شده با عشق برای تو <span>❤️</span> | ۱۴۰۴
+    </div>
+
+</div>
+
+<!-- مودال (پنجره بازشونده برای جزئیات کارت) -->
+<div class="modal" id="modal">
+    <div class="modal-overlay"></div>
+    <div class="modal-container">
+        <button class="modal-close" id="modalClose">&times;</button>
+        <div class="modal-image">
+            <img src="" alt="تصویر خاطره" id="modalImg">
+        </div>
+        <div class="modal-content">
+            <span class="modal-date" id="modalDate"></span>
+            <h2 id="modalTitle"></h2>
+            <p id="modalText"></p>
+            <div class="modal-memory">
+                <span>💝 این خاطره برای همیشه مال ماست</span>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- موزیک پس‌زمینه -->
+<audio id="bgMusic" loop preload="auto">
+    <source src="./Ebi-Geryeh-Nakon-320.mp3" type="audio/mpeg">
+</audio>
+
+<script src="config.js"></script>
+<script src="main.js"></script>
+</body>
+</html>
