@@ -502,8 +502,8 @@ body {
         max-width: 320px;
         scroll-snap-align: center;
         margin: 0 7.5vw;
-        margin-left: 100px;
-        margin-right: 50px;
+        margin-left: 150px;
+        margin-right: 100px;
         flex-shrink: 0;
     }
     
